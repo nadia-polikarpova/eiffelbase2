@@ -301,14 +301,4 @@ invariant
 	index_constraint: 0 <= index_ and index_ <= sequence.count + 1
 	box_definition: box ~ if sequence.domain [index_] then create {MML_SET [G]}.singleton (sequence [index_]) else {MML_SET [G]}.empty_set end
 
-note
-	copyright: "Copyright (c) 1984-2014, Eiffel Software and others"
-	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
-	source: "[
-			Eiffel Software
-			5949 Hollister Ave., Goleta, CA 93117 USA
-			Telephone 805-685-1006, Fax 805-685-6869
-			Website http://www.eiffel.com
-			Customer support http://support.eiffel.com
-		]"
 end
