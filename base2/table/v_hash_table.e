@@ -820,7 +820,7 @@ invariant
 		buckets_ [bucket_index (lock.hash [x.item], buckets_.count)].has (x.item) end
 	domain_not_too_small: across 1 |..| buckets_.count as i all
 		across 1 |..| buckets_ [i.item].count as j all map.domain [(buckets_ [i.item])[j.item]] end end
-	no_precise_duplicates: across 1 |..| buckets_.count as i all -- ToDo: within is enough?
+	no_precise_duplicates: across 1 |..| buckets_.count as i all
 		across 1 |..| buckets_.count as j all
 			across 1 |..| buckets_ [i.item].count as k all
 				across 1 |..| buckets_ [j.item].count as l all
